@@ -1,5 +1,5 @@
-const baseURL = process.env.NODE_ENV === "development" ? "http://127.0.0.1:8000" : "https://domain.com"
-
+const baseURL = process.env.NODE_ENV === "development" ? "https://testblogapp4.herokuapp.com" : "https://domain.com" 
+// const baseURL = process.env.NODE_ENV === "development" ? "http://127.0.0.1:8000" : "https://domain.com"
 export const api = {
     posts: {
         list: `${baseURL}/api/posts/`,
@@ -9,3 +9,4 @@ export const api = {
         delete: slug => `${baseURL}/api/posts/${slug}/delete/`,
     }
 }
+// https://testblogapp4.herokuapp.com/api/posts/
